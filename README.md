@@ -34,6 +34,8 @@ The Open Company Profile data format is an open format for the structured exchan
   hq-address: "4300 Wilson Boulevard\nArlington, VA 22203"
   hq-phone: "(510) 413-7396",
   
+  //Identity Information
+  identity-cik: "0001106191",
   
   //Links
   link-website: 'http://www.lightboxholding.com',
@@ -75,6 +77,23 @@ The Open Company Profile data format is an open format for the structured exchan
   ],
   
   // Investors
+  investors: [
+    {
+      date: '2015-03-21',
+      investor-name: 'ABC Capital',
+      invested-amount: 5300000,
+    }
+  ],
+  
+  // Executives
+  executives: [
+    {
+      name: 'John Smith',
+      title: 'CEO',
+      born: '1974-03-19',
+      biography: 'Mr. Joshua L. Peirez is President, Chief Operating Officer of The Dun & Bradstreet Corporation. Mr. Peirez previously served as President, Global Product, Marketing and Innovation from June 2011 to February 2014 and President, Innovation and Chief Marketing Officer from September 2010 to May 2011. Before joining Dun & Bradstreet, Mr. Peirez spent 10 years with MasterCard, most recently as Chief Innovation Officer for MasterCard Worldwide from January 2009 to August 2010. Prior to that, Mr. Peirez served as Chief Payment System Integrity Officer for MasterCard from April 2007 to January 2009 and as Group Executive, Global Public Policy and Associate General Counsel from May 2002 to April 2007. He also served as Counsel and Secretary to MasterCard's U.S. Region Advisory Board of Directors from May 2002 to December 2006.'
+    }
+  ]
   
   structure: "Company",
   domicile: {
