@@ -31,21 +31,30 @@ The Open Company Profile data format is an open format for the structured exchan
   short-name: "Lightbox",
   description: "Lightbox holdings is the largest manufacturer of widgets and things",
   founded: '2016-03-02',
+  hq-address: "4300 Wilson Boulevard\nArlington, VA 22203"
+  hq-phone: "(510) 413-7396",
+  
   
   //Links
   link-website: 'http://www.lightboxholding.com',
-  link-investor_relations:
-  link-executives:
-  link-jobs:
-  link-facebook:
-  link-twitter:
-  link-linkedin:
-  link-google-plus:
-  link-youtube:
-  link-glassdoor:
-  link-instagram:
-  link-pinterest:
-  link-tumblr:
+  link-about-us : "https://www.aetna.com/about-us/aetna-history.html",
+  link-contact-us : "http://Aetna.com/about-us/contact-aetna.html",
+  link-executives : "https://www.aetna.com/about-us/aetna-leadership.html",
+  link-facebook : "https://www.facebook.com/aetna",
+  link-glassdoor : "http://www.glassdoor.com/Reviews/Aetna-Reviews-E16.htm",
+  link-google-plus : "https://plus.google.com/111685156523506874595/about",
+  link-instagram : null,
+  link-investor-relations : "http://Aetna.com/about-us/investor-information.html",
+  link-jobs : "http://Aetna.com/about-us/aetna-careers.html",
+  link-linkedin : "https://www.linkedin.com/company/aetna?trk=top-nav-home",
+  link-milestones : "https://www.aetna.com/about-us/investor-information.html",
+  link-pinterest : "http://..",
+  link-products : "http://..",
+  link-tumblr : "http://..",
+  link-twitter : "https://twitter.com/aetna",
+  link-youtube : "https://www.youtube.com/aetna",
+  link-crunchbase: "http://..",
+  link-rss-feed: "http://..",
   
   //Images
   images: [
@@ -55,6 +64,7 @@ The Open Company Profile data format is an open format for the structured exchan
       image-src: "http://my.site/hq.png",
     },
   ],
+  
   //Videos
   videos: [
     {
@@ -64,16 +74,19 @@ The Open Company Profile data format is an open format for the structured exchan
     }
   ],
   
-  org-structure: "Company",
-  org-domicile: {
+  // Investors
+  
+  structure: "Company",
+  domicile: {
     country: "USA",
     state: "California",
   },
-  org-share-types: [
+  securities: [
     {
-      share-class-code: 'C',
-      share-class-description: "Common Shares",
-      share-currency: 'usd',
+      type: 'Stock',
+      class: 'C',
+      description: "Common Shares",
+      currency: 'usd',
       shares-outstanding: 1056789,
       shares-float: 1057894,
       isin: 'US38259P5089',
@@ -107,4 +120,4 @@ The Open Company Profile data format is an open format for the structured exchan
     }
   ]
 }
-
+```
