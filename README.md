@@ -1,6 +1,8 @@
 # Open Company Profile Spec
 The Open Company Profile data format is an open format for the structured exchange of company profile data between different organizations
 
+http://www.opencompanyprofile.com/
+
 ## Conventions
 * Any field marked as *must* is required, and needs to be included for the file to be valid
 * Any field marked as *may* can be included but is not required for the file to be valid
