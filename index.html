@@ -33,6 +33,8 @@
 
 <p>The Open Company Profile data format is an open format for the structured exchange of company profile data between different organizations</p>
 
+<p><a href="http://www.opencompanyprofile.com/">http://www.opencompanyprofile.com/</a></p>
+
 <h2>
 <a id="conventions" class="anchor" href="#conventions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Conventions</h2>
 
@@ -63,13 +65,6 @@
 </ul>
 
 <h2>
-<a id="publishing-the-data" class="anchor" href="#publishing-the-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Publishing the data</h2>
-
-<ul>
-<li>Any company wishing to publish their own company profile</li>
-</ul>
-
-<h2>
 <a id="sample-data" class="anchor" href="#sample-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sample Data</h2>
 
 <div class="highlight highlight-source-js"><pre>{
@@ -87,7 +82,8 @@
   hq<span class="pl-k">-</span>phone<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>(510) 413-7396<span class="pl-pds">"</span></span>,
 
   <span class="pl-c">//Identity Information</span>
-  identity<span class="pl-k">-</span>cik<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>0001106191<span class="pl-pds">"</span></span>,
+  cik<span class="pl-k">-</span>id<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>0001106191<span class="pl-pds">"</span></span>,
+  prconnect<span class="pl-k">-</span>id<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>PRC0905A<span class="pl-pds">"</span></span>,
 
   <span class="pl-c">//Links</span>
   link<span class="pl-k">-</span>website<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>http://www.lightboxholding.com<span class="pl-pds">'</span></span>,
@@ -123,7 +119,7 @@
   videos<span class="pl-k">:</span> [
     {
       video<span class="pl-k">-</span>name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Our Products<span class="pl-pds">"</span></span>,
-      video<span class="pl-k">-</span>name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Check out this YouTube video where we show off all of our cool products<span class="pl-pds">"</span></span>,
+      video<span class="pl-k">-</span>description<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Check out this YouTube video where we show off all of our cool products<span class="pl-pds">"</span></span>,
       link<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>http://my.site/foo.mp4<span class="pl-pds">"</span></span>,
     }
   ],
