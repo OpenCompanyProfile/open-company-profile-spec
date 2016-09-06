@@ -37,7 +37,8 @@ http://www.opencompanyprofile.com/
   hq-phone: "(510) 413-7396",
   
   //Identity Information
-  identity-cik: "0001106191",
+  cik-id: "0001106191",
+  prconnect-id: "PRC0905A",
   
   //Links
   link-website: 'http://www.lightboxholding.com',
@@ -73,7 +74,7 @@ http://www.opencompanyprofile.com/
   videos: [
     {
       video-name: "Our Products",
-      video-name: "Check out this YouTube video where we show off all of our cool products",
+      video-description: "Check out this YouTube video where we show off all of our cool products",
       link: "http://my.site/foo.mp4",
     }
   ],
