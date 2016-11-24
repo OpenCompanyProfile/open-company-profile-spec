@@ -24,67 +24,72 @@ http://www.opencompanyprofile.com/
 ```javascript
 {
   //Header
-  open-company-profile: 1.0,
+  openCompanyProfileVersion: 1.0,
   lang: "en",
   
   //Basic information 
   name: "Lightbox Holdings Company, Inc.",
-  pretty-name: "Lightbox Holdings",
-  short-name: "Lightbox",
+  prettyName: "Lightbox Holdings",
+  shortName: "Lightbox",
   description: "Lightbox holdings is the largest manufacturer of widgets and things",
   founded: '2016-03-02',
-  hq-address: "4300 Wilson Boulevard\nArlington, VA 22203"
-  hq-phone: "(510) 413-7396",
+  hqAddress: "4300 Wilson Boulevard\nArlington, VA 22203"
+  hqPhone: "(510) 413-7396",
   
   //Identity Information
-  cik-id: "0001106191",
-  prconnect-id: "PRC0905A",
+  cikId: "0001106191",
+  prconnectId: "PRC0905A",
   
   //Links
-  link-website: 'http://www.lightboxholding.com',
-  link-about-us : "https://www.aetna.com/about-us/aetna-history.html",
-  link-contact-us : "http://Aetna.com/about-us/contact-aetna.html",
-  link-executives : "https://www.aetna.com/about-us/aetna-leadership.html",
-  link-facebook : "https://www.facebook.com/aetna",
-  link-glassdoor : "http://www.glassdoor.com/Reviews/Aetna-Reviews-E16.htm",
-  link-google-plus : "https://plus.google.com/111685156523506874595/about",
-  link-instagram : null,
-  link-investor-relations : "http://Aetna.com/about-us/investor-information.html",
-  link-jobs : "http://Aetna.com/about-us/aetna-careers.html",
-  link-linkedin : "https://www.linkedin.com/company/aetna?trk=top-nav-home",
-  link-milestones : "https://www.aetna.com/about-us/investor-information.html",
-  link-pinterest : "http://..",
-  link-products : "http://..",
-  link-tumblr : "http://..",
-  link-twitter : "https://twitter.com/aetna",
-  link-youtube : "https://www.youtube.com/aetna",
-  link-crunchbase: "http://..",
-  link-rss-feed: "http://..",
-  
+  links: {
+   website: 'http://www.lightboxholding.com',
+   aboutUs : "https://www.aetna.com/about-us/aetna-history.html",
+   contactUs : "http://Aetna.com/about-us/contact-aetna.html",
+   executives : "https://www.aetna.com/about-us/aetna-leadership.html",
+   facebook : "https://www.facebook.com/aetna",
+   glassdoor : "http://www.glassdoor.com/Reviews/Aetna-Reviews-E16.htm",
+   googlePlus : "https://plus.google.com/111685156523506874595/about",
+   instagram : null,
+   investorRelations : "http://Aetna.com/about-us/investor-information.html",
+   jobs : "http://Aetna.com/about-us/aetna-careers.html",
+   linkedin : "https://www.linkedin.com/company/aetna?trk=top-nav-home",
+   milestones : "https://www.aetna.com/about-us/investor-information.html",
+   pinterest : "http://..",
+   products : "http://..",
+   tumblr : "http://..",
+   twitter : "https://twitter.com/aetna",
+   youtube : "https://www.youtube.com/aetna",
+   owler: "http://..",
+   crunchbase: "http://..",
+   rssFeed: "http://..",
+  },
   //Images
   images: [
     {
-      image-name: "Picture of Lightbox corporate headquarters",
-      image-description: "Lightbox has the largest headquarters in North America",
-      image-src: "http://my.site/hq.png",
+      name: "Picture of Lightbox corporate headquarters",
+      description: "Lightbox has the largest headquarters in North America",
+      src: "http://my.site/hq.png",
+      link: "http://my.site/dest.html",
     },
   ],
   
   //Videos
   videos: [
     {
-      video-name: "Our Products",
-      video-description: "Check out this YouTube video where we show off all of our cool products",
-      link: "http://my.site/foo.mp4",
+      name: "Our Products",
+      description: "Check out this YouTube video where we show off all of our cool products",
+      src: "http://my.site/foo.mp4",
+      link: "http://my.site/dest.html",
     }
   ],
   
-  // Investors
-  investors: [
+  // Investments
+  investments: [
     {
       date: '2015-03-21',
-      investor-name: 'ABC Capital',
-      invested-amount: 5300000,
+      name: 'ABC Capital',
+      amount: 5300000,
+      currency: 'usd',
     }
   ],
   
@@ -109,34 +114,43 @@ http://www.opencompanyprofile.com/
       class: 'C',
       description: "Common Shares",
       currency: 'usd',
-      shares-outstanding: 1056789,
-      shares-float: 1057894,
+      sharesOutstanding: 1056789,
+      sharesFloat: 1057894,
       isin: 'US38259P5089',
       listings: [
         {
           exchange: 'Nasdaq',
           symbol: 'LBOX',
-          dividends: [
-            {
-              payable: '2016-05-03',
-              announced: '2016-04-15',
-              executed: '2016-06-01',
-              payout: 0.34,
-              currency: 'usd',
-              future-interval: 'quarterly',
-            }
-          ],
-          splits: [
-            {
-              date: '2016-04-17',
-              shares-from: 5,
-              shares-to: 3.3,
-            }
-          ]
         },
         {
           exchange: 'LSE',
           symbol: 'LIGHT',
+        }
+      ],
+      futureDividends: [
+        {
+          payable: '2016-05-03',
+          announced: '2016-04-15',
+          executed: '2016-06-01',
+          payout: 0.34,
+          currency: 'usd',
+          futureInterval: 'quarterly',
+        }
+      ],
+      priorDividends: [
+        {
+          payable: '2016-05-03',
+          announced: '2016-04-15',
+          executed: '2016-06-01',
+          payout: 0.34,
+          currency: 'usd',
+        }
+      ],
+      splits: [
+        {
+          date: '2016-04-17',
+          sharesFrom: 5,
+          sharesTo: 3.3,
         }
       ]
     }
